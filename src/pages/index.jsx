@@ -15,21 +15,25 @@ export default function Home() {
     "Web development",
     "Video editing",
     "logo design",
+    "S&M ads",
+    "Branding",
+    "Print work",
+    "UI/UX"
   ];
 
   return (
     <>
       <HeadComponent />
-      <section className=" flex justify-center items-center  md:h-96 h-80">
+      <section className=" flex justify-center items-center md:h-96 h-64 md:mt-0 mt-14">
         <div className=" flex flex-col gap-2 items-center">
           <h1 className="text-center">Tailored design solutions</h1>
           <h4 className="text-sm md:text-lg font-light ">
             {" "}
             for businesses of all sizes and industries.
           </h4>
-          <div className="mt-10 flex md:flex-row flex-col justify-center gap-6">
+          <div className="mt-10  flex md:flex-row flex-col justify-center gap-6">
             <Link
-              className="glass hover:-translate-y-1 transition-all ease-in-out"
+              className="glass flex justify-center hover:-translate-y-1 transition-all ease-in-out"
               href="https://madhuribasant.netlify.app/"
               target="_blank"
             >
@@ -38,15 +42,15 @@ export default function Home() {
 
             <Link
               href="/discuss"
-              className="glass hover:-translate-y-1 transition-all ease-in-out"
+              className="glass hover:-translate-y-1 transition-all ease-in-out "
             >
-              Discuss a project
+              Discuss Project
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="h-[100vh] gap-3 flex flex-col justify-center items-center ">
+      <section className="h-[100vh] gap-3 flex flex-col justify-center items-center  ">
         <h1>What we offer?</h1>
         <p className=" md:w-1/2 w-full px-6">
           At our creative agency, we pride ourselves on delivering high-quality,
@@ -57,7 +61,7 @@ export default function Home() {
         <div className="md:w-1/2 w-full mt-5 flex flex-wrap gap-3 justify-center items-center">
           {services.map((service, index) => {
             return (
-              <div className="outline_btn" key={index}>
+              <div className="outline_btn capitalize" key={index}>
                 {service}
               </div>
             );
@@ -65,7 +69,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center md:h-screen h-[50rem]">
+      <section className="flex flex-col justify-center md:h-screen h-[25rem]">
         <h1 className="md:w-1/2 mx-auto w-full ">
           Our designers previously worked for
         </h1>
@@ -81,10 +85,10 @@ export default function Home() {
               layout="fill"
             />
           </div>
-          <div className="relative min-w-full h-32 grid place-items-center">
+          <div className="relative min-w-full h-24 grid place-items-center">
             <Image
-              src="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678437555/almondd/brands/pogo-11_tyavil.png"
-              blurDataURL="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678437555/almondd/brands/pogo-11_tyavil.png"
+              src="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678437555/almondd/brands/pogo-11_tyavil.png "
+              blurDataURL="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678437555/almondd/brands/pogo-11_tyavil.png "
               placeholder="blur"
               objectFit="contain"
               layout="fill"
@@ -93,8 +97,8 @@ export default function Home() {
           </div>
           <div className="relative min-w-full h-20">
             <Image
-              src="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678437593/almondd/brands/logo_2_t6nyfu.png"
-              blurDataURL="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678437593/almondd/brands/logo_2_t6nyfu.png"
+              src="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678437593/almondd/brands/logo_2_t6nyfu.png "
+              blurDataURL="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678437593/almondd/brands/logo_2_t6nyfu.png "
               placeholder="blur"
               objectFit="contain"
               layout="fill"
@@ -111,7 +115,7 @@ export default function Home() {
               alt="cartoon network"
             />
           </div>
-          <div className="relative min-w-full h-32 grid place-items-center">
+          <div className="relative min-w-full h-24">
             <Image
               src="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678437555/almondd/brands/tata_tep8ys.png"
               blurDataURL="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678437555/almondd/brands/tata_tep8ys.png"
@@ -143,7 +147,7 @@ export default function Home() {
               alt="image"
             />
           </div>
-          <div className="relative min-w-full h-60 grid place-items-center">
+          <div className="relative min-w-full grid md:place-items-center ">
             <video
               src="https://res.cloudinary.com/dzwx9lrsh/video/upload/v1678448179/almondd/brands/Untitled_design_26_ytvfp4.mp4"
               autoPlay
@@ -153,7 +157,7 @@ export default function Home() {
             ></video>
           </div>
 
-          <div className="relative min-w-full h-60 grid place-items-center">
+          <div className="relative min-w-full h-60  grid md:place-items-center">
             <video
               src="https://res.cloudinary.com/dzwx9lrsh/video/upload/v1678448153/almondd/brands/Untitled_design_25_t5fa33.mp4"
               autoPlay
@@ -230,7 +234,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="p-2 flex justify-end items-center gap-4 bg-black/50 backdrop-blur-xl ">
+      <footer className="p-4 flex justify-end items-center gap-4 bg-black/50 text-white/60 backdrop-blur-xl ">
         <Link href="https://www.facebook.com/profile.php?id=100090922962940" target="_blank">
           <BsFacebook fontSize="1.2rem" />
         </Link>
