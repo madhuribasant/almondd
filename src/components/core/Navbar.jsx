@@ -11,6 +11,8 @@ const Navbar = () => {
         <Link href="/">
           <Image
             src="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678373239/almondd/logo-white_kseg1m.png"
+            blurDataURL="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678373239/almondd/logo-white_kseg1m.png"
+            placeholder="blur"
             width="120"
             height="10"
             alt="logo"
@@ -36,7 +38,7 @@ const Navbar = () => {
         </ul>
 
         <div className="md:hidden visible">
-          <Menu as="div" className="relative inline-block text-">
+          <Menu as="div" className="relative inline-block ">
             <div>
               <Menu.Button className=" justify-center rounded-md bg-black bg-opacity-20 p-4 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
               <GiHamburgerMenu/>
@@ -51,14 +53,14 @@ const Navbar = () => {
               leaveFrom="transform opacity-100 scale-100"
               leaveTo="transform opacity-0 scale-95"
             >
-              <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-white rounded-md bg-white/50 backdrop-blur-2xl shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+              <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-white rounded-md bg-black/30 backdrop-blur-2xl shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <div className="px-1 py-1 ">
                   <Menu.Item>
                     {({ active }) => (
                       <Link
                       href="/about"
                         className={`${
-                          active ? "bg-black/50 text-white" : "text-gray-900"
+                          active ? "bg-black/50 text-white" : "text-white/80"
                         } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                       >
                        
@@ -71,7 +73,7 @@ const Navbar = () => {
                       <Link
                       href="/contact"
                         className={`${
-                          active ? "bg-black/50 text-white" : "text-gray-900"
+                          active ? "bg-black/50 text-white" : "text-white/80"
                         } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                       >
                        
@@ -84,7 +86,7 @@ const Navbar = () => {
                       <Link
                       href="/discuss"
                         className={`${
-                          active ? "bg-black/50 text-white" : "text-gray-900"
+                          active ? "bg-black/50 text-white" : "text-white/80"
                         } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                       >
                         Discuss Project
