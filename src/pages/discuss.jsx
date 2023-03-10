@@ -47,15 +47,15 @@ const Discuss = () => {
   ];
 
   const NoneIndianBudget = [
-    "$5,000 Minimum Engagement",
-    "$5,000 to $25,000",
-    "More than $25,000",
+    "$200 Minimum Engagement",
+    "$200 to $500",
+    "More than $500",
   ];
 
   const IndianBudget = [
-    "Rs 40,000 Minimum Engagement",
-    "Rs 40,000 to Rs 2,00,000",
-    "More than Rs 2,00,000",
+    "Rs 2,000 Minimum Engagement",
+    "Rs 2,000 to Rs 6,000",
+    "More than Rs 6,000",
   ];
 
   const sendEmail = (data) => {
@@ -102,9 +102,11 @@ const Discuss = () => {
                   onSubmit={handleSubmit(sendEmail)}
                   className="flex flex-col gap-8"
                 >
+                  <h2>
+                      Contact Information :</h2>
                   <div className="flex md:flex-row flex-col gap-4">
                     <label htmlFor="contact">
-                      Contact Information :
+                      Full Name :
                       <input
                         className="input"
                         {...register("name", { required: true })}
@@ -167,7 +169,7 @@ const Discuss = () => {
                     {watchIsIndian === "yes" ? (
                       <>
                         {" "}
-                        <div className="flex flex-wrap gap-4">
+                        <div className="flex flex-wrap mt-5 gap-4">
                           {IndianBudget.map((budget, index) => {
                             return (
                               <label key={index}>
@@ -177,7 +179,9 @@ const Discuss = () => {
                                   value={budget}
                                   {...register("budget")}
                                 />
-                                {budget}
+                                <span className="mx-2">
+                                  {budget}
+                                </span>
                               </label>
                             );
                           })}
@@ -185,7 +189,7 @@ const Discuss = () => {
                       </>
                     ) : (
                       <>
-                        <div className="flex flex-wrap gap-4">
+                        <div className="flex flex-wrap mt-5 gap-4">
                           {NoneIndianBudget.map((budget, index) => {
                             return (
                               <label key={index}>
@@ -195,7 +199,9 @@ const Discuss = () => {
                                   value={budget}
                                   {...register("budget")}
                                 />
-                                {budget}
+                                <span className="mx-2">
+                                  {budget}
+                                </span>
                               </label>
                             );
                           })}
@@ -205,7 +211,7 @@ const Discuss = () => {
                   </div>
                   <div>
                     <h2>Services *</h2>
-                    <div className="flex gap-2 flex-wrap ">
+                    <div className="flex gap-2 flex-wrap mt-5">
                       {services.map((service, index) => {
                         return (
                           <label htmlFor="budget" key={index}>
@@ -214,13 +220,15 @@ const Discuss = () => {
                               value={service}
                               {...register("services")}
                             />
-                            {service}
+                            <span className="mx-2">
+                                  {service}
+                                </span>
                           </label>
                         );
                       })}
                     </div>
                   </div>
-
+                  <h2>Description *</h2>
                   <textarea
                     {...register("description", {
                       required: true,
