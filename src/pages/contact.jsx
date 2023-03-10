@@ -7,28 +7,30 @@ const Contact = () => {
   return (
     <>
       <HeadComponent title="Contact" />
-
-      <section className="flex md:flex-row flex-col justify-center   md:gap-4 gap-14 h-[80vh] ">
-        <div className="flex flex-col justify-center items-center gap-2">
+      <section className="flex md:flex-row flex-col justify-center mb-15">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3500.5049694988793!2d77.12592668012603!3d28.67453748240114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s7JWVM4FH%2BRH9!5e0!3m2!1sen!2sin!4v1678474326205!5m2!1sen!2sin" width="100%" height="400" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+      </section>
+      <section className="flex md:flex-row flex-col justify-center  md:gap-44 gap-14 h-[75vh] ">
+      <div className="flex flex-col justify-center items-center gap-2">
           <div className="glass p-3">
-            <BsFillTelephoneFill />
+            <BsFillTelephoneFill fontSize={'5rem'} />
           </div>
-          <a href="tel:+91 9931113032" className="outline_btn md:hidden visible text-sm p-2">+91-9931113032</a>
-          <h1 className="outline_btn  text-sm p-2 md:opacity-100 opacity-0">+91-9931113032</h1>
+          <a href="tel:+91 9931113032" className=" md:hidden visible text-sm p-2">+91-9931113032</a>
+          <h1 className="  text-lg p-2 md:opacity-100 opacity-0">+91-9931113032</h1>
         </div>
         <div className="flex flex-col justify-center items-center gap-2">
           <div className="glass p-3">
-            <AiFillMail />
+            <AiFillMail fontSize={'5rem'} />
           </div>
-          <a href="mailto:madhuridesign01@gmail.com" className="outline_btn md:hidden visible text-sm p-2">madhuridesign01@gmail.com</a>
-          <h1 className="outline_btn md:opacity-100 opacity-0 text-sm p-2">madhuridesign01@gmail.com</h1>
+          <a href="mailto:madhuridesign01@gmail.com" className=" md:hidden visible text-lg p-2">madhuridesign01@gmail.com</a>
+          <h1 className=" md:opacity-100 opacity-0 text-lg p-2">madhuridesign01@gmail.com</h1>
         </div>
         <div className="flex flex-col justify-center items-center gap-2">
           <div className="glass p-3">
-            <MdLocationPin/>
+            <MdLocationPin fontSize={'5rem'} />
           </div>
-          <h1 className="outline_btn text-sm p-2 capitalize">Paschim vihar, new delhi</h1>
-        </div>
+          <h1 className=" text-lg p-2 capitalize">Paschim vihar, new delhi</h1>
+         </div>
       </section>
     </>
   );

@@ -11,7 +11,7 @@
   }
 
   .input {
-    @apply border-[0.5] outline-none w-full rounded-full bg-black/40  backdrop-blur-xl text-white/50 px-2 py-[5px] text-sm;
+    @apply border-[0.5] outline-none w-full rounded-full bg-black/40 mt-5 backdrop-blur-xl text-white/50 px-2 py-[5px] text-sm;
   }
 
   .box{
