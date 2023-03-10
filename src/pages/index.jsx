@@ -83,8 +83,8 @@ export default function Home() {
           </div>
           <div className="relative min-w-full h-32 grid place-items-center">
             <Image
-              src="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678437555/almondd/brands/pogo-11_tyavil.png "
-              blurDataURL="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678437555/almondd/brands/pogo-11_tyavil.png "
+              src="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678437555/almondd/brands/pogo-11_tyavil.png"
+              blurDataURL="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678437555/almondd/brands/pogo-11_tyavil.png"
               placeholder="blur"
               objectFit="contain"
               layout="fill"
@@ -93,8 +93,8 @@ export default function Home() {
           </div>
           <div className="relative min-w-full h-20">
             <Image
-              src="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678437593/almondd/brands/logo_2_t6nyfu.png "
-              blurDataURL="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678437593/almondd/brands/logo_2_t6nyfu.png "
+              src="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678437593/almondd/brands/logo_2_t6nyfu.png"
+              blurDataURL="https://res.cloudinary.com/dzwx9lrsh/image/upload/v1678437593/almondd/brands/logo_2_t6nyfu.png"
               placeholder="blur"
               objectFit="contain"
               layout="fill"
