@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* .btn {
+    @apply rounded-full border-none py-4 px-6 text-xl cursor-pointer backdrop-blur-2xl bg-white/10 hover:-translate-y-1 transition-all ease-in-out;
+  } */
+  .glass {
+    @apply rounded-full border-[0.5px] border-white/20 py-4 px-6 text-xl cursor-pointer bg-gradient-to-r from-white/20 to-transparent ;
+  }
+
+  .input {
+    @apply border-[0.5] outline-none w-full rounded-full bg-black/40  backdrop-blur-xl text-white/50 px-2 py-[5px] text-sm;
+  }
+
+  .box{
+    @apply h-96 bg-black/30 flex flex-col p-3 justify-center items-center rounded-md;
+  }
+
+  
+  .outline_btn{
+    @apply border-[1px] rounded-full py-3 px-6;
+  }
+
+ 
+}
+
+@layer utilities {
+
+  input.chk-btn:not(:checked) + label:hover {
+    @apply bg-slate-100;
+  }
+  input.chk-btn + label:active,
+  input.chk-btn:checked + label {
+    @apply bg-green-400;
+  }
+
+  h1{
+    @apply text-center  md:text-5xl text-4xl;
+  }
+  
+  p{
+    @apply md:text-lg text-sm text-center text-white/50 font-light ; 
+  }
+
+  input, textarea, select{
+    @apply  outline-none  ;
+  }
+
+
+  
+}
