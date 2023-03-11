@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <main
-        className={` h-full text-white/80 font-poppins sticky z-20 bg-img bg-no-repeat bg-fixed bg-cover`}
+        className={` h-full text-white/80 font-poppins bg-img bg-no-repeat bg-fixed  bg-cover`}
       >
         {/* <Image /> */}
         <Navbar />
