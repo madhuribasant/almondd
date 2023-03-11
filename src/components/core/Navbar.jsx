@@ -19,7 +19,7 @@ const Navbar = () => {
           />
         </Link>
 
-        <ul className=" gap-4 text-sm md:flex hidden">
+        <ul className=" gap-4 2xl:text-lg text-sm md:flex hidden">
           <li>
             <Link href="/about" className="py-3 px-6">
               About Us
@@ -41,7 +41,7 @@ const Navbar = () => {
           <Menu as="div" className="relative inline-block ">
             <div>
               <Menu.Button className=" justify-center rounded-md bg-black bg-opacity-20 p-4 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-              <GiHamburgerMenu/>
+              <GiHamburgerMenu className="text-xl"/>
               </Menu.Button>
             </div>
             <Transition
@@ -61,7 +61,7 @@ const Navbar = () => {
                       href="/about"
                         className={`${
                           active ? "bg-black/50 text-white" : "text-white/80"
-                        } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        } group flex w-full items-center rounded-md px-2 py-2  text-lg`}
                       >
                        
                         About Us
@@ -74,7 +74,7 @@ const Navbar = () => {
                       href="/contact"
                         className={`${
                           active ? "bg-black/50 text-white" : "text-white/80"
-                        } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        } group flex w-full items-center rounded-md px-2 py-2  text-lg`}
                       >
                        
                         Contact Us
@@ -87,7 +87,7 @@ const Navbar = () => {
                       href="/discuss"
                         className={`${
                           active ? "bg-black/50 text-white" : "text-white/80"
-                        } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        } group flex w-full items-center rounded-md px-2 py-2  text-lg`}
                       >
                         Discuss Project
                       </Link>

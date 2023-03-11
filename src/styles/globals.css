@@ -11,7 +11,7 @@
   }
 
   .input {
-    @apply border-[0.5] outline-none w-full rounded-full bg-black/40 mt-5 backdrop-blur-xl text-white/50 px-2 py-[5px] text-sm;
+    @apply border-[0.5] outline-none w-full rounded-full bg-black/40 mt-5 backdrop-blur-xl text-white/50 px-2 py-[5px] 2xl:p-3 2xl:text-lg text-sm;
   }
 
   .box{
@@ -37,11 +37,11 @@
   }
 
   h1{
-    @apply text-center  md:text-5xl text-4xl;
+    @apply text-center 2xl:text-6xl  md:text-5xl text-4xl;
   }
   
   p{
-    @apply md:text-lg text-sm text-center text-white/50 font-light ; 
+    @apply 2xl:text-2xl md:text-lg text-sm text-center text-white/50 font-light ; 
   }
 
   input, textarea, select{

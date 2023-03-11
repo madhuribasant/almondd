@@ -9,13 +9,10 @@ const Discuss = () => {
   const [reload , setReload ] = React.useState(false)
   React.useEffect(()=>{
     if(typeof window !== "undefined"){
-
       const value = getCookie('isSubmitted')
-      // setIsSubmitted()
       setIsSubmitted(value ?? false)
       
     }
-
 
   },[reload])
 
@@ -74,7 +71,7 @@ const Discuss = () => {
           console.log("SUCCESS!", response.status, response.text);
           setCookie("isSubmitted", JSON.stringify(true), {
             path: "/",
-            maxAge: 3600, // Expires after 1hr
+            maxAge: 3600, 
             sameSite: true,
           });
 
@@ -94,8 +91,8 @@ const Discuss = () => {
     return (
       <>
         <HeadComponent title="Discuss with us" />
-        <section className="flex justify-center items-center md:h-screen h-full">
-          <div className="glass md:w-1/2 w-full md:max-h-full px-6 py-10 rounded-md text-sm   ">
+        <section className="flex justify-center items-center 2xl:h-screen h-full ">
+          <div className="glass md:w-1/2 w-full md:max-h-full px-6 py-10 rounded-md 2xl:text-lg text-sm   ">
             {!isSubmitted ? (
               <>
                 <form
@@ -104,7 +101,7 @@ const Discuss = () => {
                 >
                   <h2>
                       Contact Information :</h2>
-                  <div className="flex md:flex-row flex-col gap-4">
+                  <div className="flex md:flex-row flex-col gap-4 min-w-full">
                     <label htmlFor="contact">
                       Full Name :
                       <input

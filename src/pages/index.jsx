@@ -12,13 +12,13 @@ import { BsFacebook } from "react-icons/bs";
 export default function Home() {
   const services = [
     "S&M posts",
-    "Web development",
     "Video editing",
     "logo design",
     "S&M ads",
     "Branding",
+    "Web development",
+    "UI/UX",
     "Print work",
-    "UI/UX"
   ];
 
   return (
@@ -69,7 +69,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center md:h-screen h-[25rem]">
+      <section className="flex flex-col justify-center md:h-screen md:mt-0 -mt-20 h-[25rem]">
         <h1 className="md:w-1/2 mx-auto w-full ">
           Our designers previously worked for
         </h1>
@@ -128,7 +128,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-10 md:h-screen h-full flex flex-col justify-center ">
+      <section className="mt-20 md:mt-0 md:h-screen h-full flex flex-col justify-center ">
         <h1>Our Recent Work</h1>
         <div className="grid md:grid-cols-4 grid-cols-1 px-3 gap-3 mt-20">
           <div className="relative min-w-full h-60">
