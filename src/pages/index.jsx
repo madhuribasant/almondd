@@ -26,10 +26,10 @@ export default function Home() {
       <HeadComponent />
       <section className=" flex justify-center items-center md:h-96 h-64 md:mt-0 mt-14">
         <div className=" flex flex-col gap-2 items-center">
-          <h1 className="text-center">Big ideas dont have to come with big price tags</h1>
+          <h1 className="text-center">Affordable design solutions</h1>
           <h4 className="text-sm md:text-lg font-light ">
             {" "}
-            Unlock your brands potential with our affordable creative services
+           for businesses of all sizes and industries.
           </h4>
           <div className="mt-10  flex md:flex-row flex-col justify-center gap-6">
             <Link
