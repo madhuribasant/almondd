@@ -235,13 +235,13 @@ export default function Home() {
       </section>
 
       <footer className="p-4 flex justify-end items-center gap-4 bg-black/50 text-white/60 backdrop-blur-xl ">
-        <Link href="https://www.facebook.com/profile.php?id=100090922962940" target="_blank">
+        <Link href="https://www.facebook.com/almonddagency" target="_blank">
           <BsFacebook fontSize="1.2rem" />
         </Link>
-        <Link href="https://instagram.com/almondd_design?igshid=ZDdkNTZiNTM=" target="_blank">
+        <Link href="https://instagram.com/almondd_agency?igshid=YmMyMTA2M2Y=" target="_blank">
           <AiFillInstagram fontSize="1.2rem" />
         </Link>
-        <Link href="" >
+        <Link href="https://www.linkedin.com/company/almondd/">
           <GrLinkedinOption fontSize="1.2rem" />
         </Link>
       </footer>
