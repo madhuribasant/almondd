@@ -15,15 +15,15 @@ const Contact = () => {
           <div className="glass 2xl:p-5 p-3">
             <BsFillTelephoneFill className="2xl:text-8xl" />
           </div>
-          <a href="tel:+91 9931113032" className=" md:hidden visible text-sm p-2">+91-9931113032</a>
-          <h1 className="  text-lg p-2 md:opacity-100 opacity-0">+91-9931113032</h1>
+          <a href="tel:+91 9155121559" className=" md:hidden visible text-sm p-2">+91-9155121559</a>
+          <h1 className="  text-lg p-2 md:opacity-100 opacity-0">+91-9155121559</h1>
         </div>
         <div className="flex flex-col justify-center items-center gap-2">
           <div className="glass 2xl:p-5 p-3">
             <AiFillMail className="2xl:text-8xl" />
           </div>
-          <a href="mailto:madhuridesign01@gmail.com" className=" md:hidden visible text-lg p-2">madhuridesign01@gmail.com</a>
-          <h1 className=" md:opacity-100 opacity-0 text-lg p-2">madhuridesign01@gmail.com</h1>
+          <a href="mailto:info@almondd.co.in" className=" md:hidden visible text-lg p-2">info@almondd.co.in</a>
+          <h1 className=" md:opacity-100 opacity-0 text-lg p-2">info@almondd.co.in</h1>
         </div>
         <div className="flex flex-col justify-center items-center gap-2">
           <div className="glass 2xl:p-5 p-3">
