@@ -61,7 +61,9 @@ const Discuss = () => {
         process.env.NEXT_PUBLIC_SERVICE_ID,
         process.env.NEXT_PUBLIC_TEMPLATE_ID,
         {
-          to_name: data.name,
+          to_name:"Almondd",
+          client_email:data.email,
+          client_name:data.name,
           message: JSON.stringify(data),
         },
         process.env.NEXT_PUBLIC_PUBLIC_KEY
